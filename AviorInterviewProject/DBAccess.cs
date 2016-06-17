@@ -18,8 +18,8 @@ namespace AviorInterviewProject
             {
                 string server = "avior-mssql-1.cgfvn3vetizv.eu-west-1.rds.amazonaws.com"; // Note connects over port 1433 so you may need to add a firewall exception on this port
                 string database = "Interviewee";
-                string userId = "Harry";
-                string password = "H@rry";
+                string userId = "<YourName>";
+                string password = "<YourN@me>";
                 return string.Format("Server={0};Database={1};User ID={2};Password={3}", server, database, userId, password); 
             }
         }
@@ -28,7 +28,7 @@ namespace AviorInterviewProject
         {
             get
             {
-                return "Harry";
+                return "<YourName>";
             }
         }
 
