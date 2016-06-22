@@ -26,5 +26,20 @@ namespace AviorInterviewProject
         {
             TestingFunctions.InsertTestData();
         }
+
+        private void SingleUpload_Click(object sender, EventArgs e)
+        {
+            TestingFunctions.ReadExcel("C:/Users/jasen/Personal/aviorinterviewproject/Example Files/Options Traded 20160503");
+        }
+
+        //private void MultiUpload_Click(object sender, EventArgs e)
+        //{
+        //   TestingFunctions.ReadMultiExcel(@"C:\Users\jasen\Personal\aviorinterviewproject\Example Files");
+        //}
+
+        private void btnProcessFiles_Click(object sender, EventArgs e)
+        {
+            TestingFunctions.ReadMultiExcel(@"C:\Users\jasen\Personal\aviorinterviewproject\Example Files");
+        }
     }
 }

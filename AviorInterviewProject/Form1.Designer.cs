@@ -35,7 +35,6 @@
             // 
             // btnClearDB
             // 
-            this.btnClearDB.Enabled = false;
             this.btnClearDB.Location = new System.Drawing.Point(12, 12);
             this.btnClearDB.Name = "btnClearDB";
             this.btnClearDB.Size = new System.Drawing.Size(75, 72);
@@ -46,6 +45,7 @@
             // 
             // btnUploadTestData
             // 
+            this.btnUploadTestData.Enabled = false;
             this.btnUploadTestData.Location = new System.Drawing.Point(93, 12);
             this.btnUploadTestData.Name = "btnUploadTestData";
             this.btnUploadTestData.Size = new System.Drawing.Size(75, 72);
@@ -62,12 +62,13 @@
             this.btnProcessFiles.TabIndex = 2;
             this.btnProcessFiles.Text = "Process Files";
             this.btnProcessFiles.UseVisualStyleBackColor = true;
+            this.btnProcessFiles.Click += new System.EventHandler(this.btnProcessFiles_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 96);
+            this.ClientSize = new System.Drawing.Size(261, 98);
             this.Controls.Add(this.btnProcessFiles);
             this.Controls.Add(this.btnUploadTestData);
             this.Controls.Add(this.btnClearDB);
